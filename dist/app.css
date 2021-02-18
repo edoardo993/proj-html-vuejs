@@ -13,10 +13,30 @@ a {
   text-decoration: none;
 }
 
+.fixed-buttons {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 9px #afafaf;
+  position: fixed;
+  top: 150px;
+  right: 15px;
+}
+.fixed-buttons .demos, .fixed-buttons .buy-now {
+  height: 70px;
+  width: 70px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.header {
+  background: #fff;
+  height: 260px;
+}
 .header .upper-nav {
   display: flex;
   justify-content: space-between;
-  margin: 15px auto 15px auto;
+  margin: 0 auto 15px auto;
+  padding-top: 15px;
   width: 1200px;
 }
 .header .upper-nav .part-left {
@@ -43,7 +63,7 @@ a {
   cursor: pointer;
 }
 .header .upper-nav .part-left span {
-  font-size: 10px;
+  font-size: 11px;
   color: #afafaf;
 }
 .header .upper-nav .part-left span a {
@@ -89,4 +109,94 @@ a {
 }
 .header .down-nav .nav-list .nav-list-items li:last-child:hover {
   border-bottom: none;
+}
+
+.jumbotron {
+  height: 700px;
+  background: url("../img/single-post-img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.jumbotron .central-content {
+  background: #fff;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 230px;
+  margin-top: 190px;
+  position: relative;
+  padding: 0 80px 0 80px;
+}
+.jumbotron .central-content span {
+  color: #67615A;
+  font-weight: bold;
+}
+.jumbotron h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.jumbotron .todays-pick {
+  position: absolute;
+  top: -25px;
+  height: 42px;
+  width: 160px;
+  background: #fc7525;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px #afafaf;
+}
+.jumbotron .todays-pick span {
+  color: #fff;
+  line-height: 42px;
+  text-transform: uppercase;
+  padding: 0 24px 0 24px;
+  font-weight: bold;
+}
+
+.main-content {
+  margin: 0 auto;
+  width: 1200px;
+}
+.main-content .foodie-journal {
+  background: #fff;
+  box-shadow: 1px 1px 3px #afafaf;
+  padding: 0 20px 0 20px;
+}
+.main-content .foodie-journal h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  padding: 40px 0 25px 0;
+  margin-top: -50px;
+}
+.main-content .photo-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .photo-container .photo-caption {
+  text-align: center;
+  width: 370px;
+}
+.main-content .photo-container .photo-caption img {
+  width: 370px;
+}
+.main-content .photo-container .photo-caption h3 {
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+}
+.main-content .photo-container .photo-caption span {
+  font-size: 14px;
+  color: #67615A;
+}
+.main-content .photo-container .photo-caption span a {
+  color: #3D3D41;
+}
+.main-content .photo-container .photo-caption span a:hover {
+  color: #fc7525;
 }
