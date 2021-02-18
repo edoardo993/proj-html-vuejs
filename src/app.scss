@@ -5,10 +5,14 @@
 }
 body{
     background: #f6f7f1;
-    font-family:  'Inter', sans-serif
+    font-family:  'Inter', sans-serif;
+    height: 3234px;
 }
 a{
     text-decoration: none
+}
+.hide{
+    display: none
 }
 .fixed-buttons{
     display: flex;
@@ -186,14 +190,34 @@ a{
     & .foodie-journal{
         background: #fff;
         box-shadow: 1px 1px 3px #afafaf;
-        padding: 0 20px 0 20px;
+        padding: 0 20px 50px 20px;
 
         & h2{
             text-transform: uppercase;
             text-align: center;
             font-size: 22px;
             padding: 40px 0 25px 0;
-            margin-top: -50px;
+            margin-top: -80px;
+            position: relative;
+
+            &:after{
+                content:"";
+                position: absolute;
+                bottom: 27px;
+                right: 0;
+                height: 0.5em;
+                width: 420px;
+                border-top: 1px dotted #ccc;
+            }
+            &:before{
+                content:"";
+                position: absolute;
+                bottom: 27px;
+                left: 0;
+                height: 0.5em;
+                width: 420px;
+                border-top: 1px dotted #ccc;
+            }
         }
     }
     & .photo-container{
@@ -203,13 +227,23 @@ a{
         & .photo-caption{
             text-align: center;
             width: 370px;
+            position: relative;
 
             & img{
-                width: 370px
+                width: 340px;
+
+                // &:hover .foodie-journal-img-hover{
+                //     display: block
+                // }
             }
             & h3{
                 margin: 15px 0 15px 0;
                 font-size: 20px;
+
+                &:hover{
+                    cursor: pointer;
+                    color: #fc7525
+                }
             }
             & span{
                 font-size: 14px;
@@ -221,6 +255,102 @@ a{
                     &:hover{
                         color: #fc7525
                     }
+                }
+            }
+            & .foodie-journal-img-hover{
+                width: 340px;
+                height: 224px;
+                background: rgb(252, 117, 37, 0.8);
+                position: absolute;
+                top: 0;
+                left: 15px
+            }
+        }
+    }
+    & .popular-recipes{
+        text-align: center;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 120px auto 100px auto;
+
+        & h3{
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    }
+    & .popular-recipes-imgs{
+        display: flex;
+
+        & .content-left{
+            width: 620px;
+            background: #fff;
+
+            & img{
+                height: 380px
+            }
+            & h4{
+                font-size: 20px;
+                margin: 40px 0 7px 0
+            }
+            & .popular-info{
+                padding: 0 35px 0 35px;
+
+                & span{
+                    position: relative;
+
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        bottom: -30px;
+                        left: 0;
+                        height: 0.5em;
+                        width: 510px;
+                        border-top: 1px dotted #ccc;
+                    }
+                    & a{
+                        color: #333338;
+                        font-size: 14px;
+    
+                        &:hover{
+                            color: #fc7525
+                        }
+                    }
+                }
+                & p{
+                    margin-top: 45px
+                }
+                & .learn-more-button{
+                    background: #fc7525;
+                    color: white;
+                    border-radius: 2px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    height: 43px;
+                    width: 143px;
+                    line-height: 43px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin-top: 25px;
+
+                    &:hover{
+                        background: #EE5827;
+                        cursor: pointer
+                    }
+                }
+            }
+        }
+        & .content-right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            & .imgs{
+                margin: 0 0 30px 30px;
+                
+                & img{
+                    width: 270px
                 }
             }
         }
