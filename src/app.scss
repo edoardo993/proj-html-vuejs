@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f6f7f1;
+    font-family:  'Inter', sans-serif
+}
+a{
+    text-decoration: none
+}
+.header{
+    // border: 1px solid #000;
+
+    & .upper-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px auto 15px auto;
+        width: 1200px;
+
+    
+        & .part-left{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            width: 1200px;
+    
+            & .iOS-button{
+                height:14px;
+                width: 25px;
+                background: #fc7525;
+                border-radius: 3px;
+                margin: 0 18px 0 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+    
+                & span{
+                    font-size: 10px;
+                    color: #fff;
+
+                }
+                &:hover{
+                    cursor: pointer
+                }
+            }
+            & span{
+                font-size: 10px;
+                color: #afafaf;
+
+                & a{
+                    color: #afafaf
+                }
+            }
+        }
+        & .part-right{
+            display: flex;
+
+            & a{
+                margin-left: 20px;
+                color: #afafaf;
+
+                &:hover{
+                    color: #ccc
+                }
+            }
+        }
+    }
+    & .down-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 1200px;
+        
+        & .nav-logo{
+            margin-bottom: 25px;
+
+            & img{
+                width: 150px
+            }
+        }
+        & .nav-list{
+    
+    
+            & .nav-list-items{
+                display: flex;
+                list-style-type: none;
+    
+                & li{
+                    margin: 0 18px 0 18px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 15px 0 10px 0;
+
+                    &:hover{
+                        cursor: pointer;
+                        border-bottom: 3px solid #fc7525;
+                        color: #fc7525
+                    }
+                    &:last-child:hover{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
