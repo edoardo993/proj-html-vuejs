@@ -6,7 +6,7 @@
 body{
     background: #f6f7f1;
     font-family:  'Inter', sans-serif;
-    height: 3234px;
+    height: 32343px;
 }
 a{
     text-decoration: none
@@ -26,13 +26,11 @@ a{
     & .buy-now{
         height: 70px;
         width: 70px;
-        // border: 1px solid #000;
         border-radius: 6px;
         background: #fff
     }
 }
 .header{
-    // border: 1px solid #000;
     background: #fff;
     height: 260px;
 
@@ -75,7 +73,7 @@ a{
                 color: #afafaf;
 
                 & a{
-                    color: #afafaf
+                    color: #9C9894
                 }
             }
         }
@@ -182,6 +180,9 @@ a{
             font-weight: bold;
         }
     }
+    &:hover{
+        cursor: pointer;
+    }
 }
 .main-content{
     margin: 0 auto;
@@ -230,11 +231,7 @@ a{
             position: relative;
 
             & img{
-                width: 340px;
-
-                // &:hover .foodie-journal-img-hover{
-                //     display: block
-                // }
+                width: 340px
             }
             & h3{
                 margin: 15px 0 15px 0;
@@ -257,13 +254,34 @@ a{
                     }
                 }
             }
-            & .foodie-journal-img-hover{
+            & .foodie-journal-img-hover.hide{
                 width: 340px;
                 height: 224px;
                 background: rgb(252, 117, 37, 0.8);
                 position: absolute;
                 top: 0;
-                left: 15px
+                left: 15px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 45px 0 45px;
+
+                & div{
+                    margin-bottom: 15px;
+
+                    & i{
+                        background: #fff;
+                        border-radius: 50%;
+                        font-size: 17px;
+                        height: 45px;
+                        width: 45px;
+                        line-height: 45px;
+                    }
+                }
+                & span{
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -288,11 +306,20 @@ a{
             background: #fff;
 
             & img{
-                height: 380px
+                height: 380px;
+
+                &:hover{
+                    cursor: pointer
+                }
             }
             & h4{
                 font-size: 20px;
-                margin: 40px 0 7px 0
+                margin: 40px 0 7px 0;
+
+                &:hover{
+                    cursor: pointer;
+                    color: #fc7525
+                }
             }
             & .popular-info{
                 padding: 0 35px 0 35px;
@@ -348,10 +375,194 @@ a{
 
             & .imgs{
                 margin: 0 0 30px 30px;
+
+                &:hover{
+                    cursor: pointer;
+                }
                 
                 & img{
                     width: 270px
                 }
+            }
+        }
+    }
+}
+.culinary-collection-imgs{
+    display: flex;
+    flex-wrap: wrap;
+
+    & .imgs{
+        width: 265px;
+        height: 180px;
+        background: #fff;
+        text-align: center;
+        margin: 15px;
+        box-shadow: -4px -4px 30px 4px rgb(228, 227, 227);
+        padding-top: 15px;
+
+        & div{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0 22px 0 22px;
+            height: 40px;
+            line-height: 40px;
+
+            &:hover{
+                background: #fc7525;
+                cursor: pointer;
+                color: #fff
+            }
+        }
+
+        & img{
+            width: 100px;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.farm-to-table-section{
+    margin-top: 150px;
+
+    & .top-part{
+        display: flex;
+        justify-content: space-between;
+
+        & .description{
+            width: 600px;
+
+            & h4{
+                text-transform: uppercase;
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            & p{
+                font-size: 16px;
+            }
+        }
+        & .top-button .read-our-blog-button{
+            background: #fc7525;
+            color: white;
+            border-radius: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 43px;
+            width: 180px;
+            line-height: 43px;
+            font-size: 13px;
+            font-weight: bold;
+
+            &:hover{
+                cursor: pointer;
+                background: #EE5827
+            }
+        }
+    }
+}
+.farm-to-table-imgs{
+    display: flex;
+    margin-top: 70px;
+
+    & .farm-content-left{
+        width: 770px;
+        display: flex;
+        flex-direction: column;
+
+        & .main-img{
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            margin-bottom: 50px;
+
+            & .main-img-info{
+                padding: 0 40px 0 40px;
+
+                & h3{
+                    margin: 40px 0 8px 0;
+                    font-size: 20px;
+                }
+                & span{
+                    font-size: 14px;
+                    color: #67615A;
+                    position: relative;
+
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        bottom: -30px;
+                        left: 0;
+                        height: 0.5em;
+                        width: 510px;
+                        border-top: 1px dotted #ccc;
+                    }
+                    & a{
+                        color: #333338;
+
+                        &:hover{
+                            color: #fc7525
+                        }
+                    }
+                }
+                & p{
+                    margin: 40px 0 40px 0
+                }
+                & .read-more-chat{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+
+                    & .read-more{
+                        font-size: 15px;
+
+                        & i{
+                            font-size: 11px;
+                        }
+                        &:hover{
+                            color: #fc7525;
+                            cursor: pointer;
+                        }
+                    }
+                    & .comments{
+                        font-size: 16px;
+
+                        &:hover{
+                            color: #fc7525;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        & .miniatures{
+            display: flex;
+            flex-wrap: wrap;
+
+            & .miniatures-boxes{
+                width: 360px;
+                margin-bottom: 50px;
+                background: #fff;
+
+                & img{
+                    width: 360px
+                }
+            }
+        }
+        & .load-more-posts{
+            height: 50px;
+            width: 100%;
+            background: #EDEDE7;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover{
+                background: #EFEFE9;
+                cursor: pointer;
             }
         }
     }

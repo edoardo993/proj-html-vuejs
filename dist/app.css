@@ -7,7 +7,7 @@
 body {
   background: #f6f7f1;
   font-family: "Inter", sans-serif;
-  height: 3234px;
+  height: 32343px;
 }
 
 a {
@@ -72,7 +72,7 @@ a {
   color: #afafaf;
 }
 .header .upper-nav .part-left span a {
-  color: #afafaf;
+  color: #9C9894;
 }
 .header .upper-nav .part-right {
   display: flex;
@@ -163,6 +163,9 @@ a {
   padding: 0 24px 0 24px;
   font-weight: bold;
 }
+.jumbotron:hover {
+  cursor: pointer;
+}
 
 .main-content {
   margin: 0 auto;
@@ -229,13 +232,32 @@ a {
 .main-content .photo-container .photo-caption span a:hover {
   color: #fc7525;
 }
-.main-content .photo-container .photo-caption .foodie-journal-img-hover {
+.main-content .photo-container .photo-caption .foodie-journal-img-hover.hide {
   width: 340px;
   height: 224px;
   background: rgba(252, 117, 37, 0.8);
   position: absolute;
   top: 0;
   left: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 45px 0 45px;
+}
+.main-content .photo-container .photo-caption .foodie-journal-img-hover.hide div {
+  margin-bottom: 15px;
+}
+.main-content .photo-container .photo-caption .foodie-journal-img-hover.hide div i {
+  background: #fff;
+  border-radius: 50%;
+  font-size: 17px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+}
+.main-content .photo-container .photo-caption .foodie-journal-img-hover.hide span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
 }
 .main-content .popular-recipes {
   text-align: center;
@@ -259,9 +281,16 @@ a {
 .main-content .popular-recipes-imgs .content-left img {
   height: 380px;
 }
+.main-content .popular-recipes-imgs .content-left img:hover {
+  cursor: pointer;
+}
 .main-content .popular-recipes-imgs .content-left h4 {
   font-size: 20px;
   margin: 40px 0 7px 0;
+}
+.main-content .popular-recipes-imgs .content-left h4:hover {
+  cursor: pointer;
+  color: #fc7525;
 }
 .main-content .popular-recipes-imgs .content-left .popular-info {
   padding: 0 35px 0 35px;
@@ -313,6 +342,171 @@ a {
 .main-content .popular-recipes-imgs .content-right .imgs {
   margin: 0 0 30px 30px;
 }
+.main-content .popular-recipes-imgs .content-right .imgs:hover {
+  cursor: pointer;
+}
 .main-content .popular-recipes-imgs .content-right .imgs img {
   width: 270px;
+}
+
+.culinary-collection-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.culinary-collection-imgs .imgs {
+  width: 265px;
+  height: 180px;
+  background: #fff;
+  text-align: center;
+  margin: 15px;
+  box-shadow: -4px -4px 30px 4px #e4e3e3;
+  padding-top: 15px;
+}
+.culinary-collection-imgs .imgs div {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 22px 0 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.culinary-collection-imgs .imgs div:hover {
+  background: #fc7525;
+  cursor: pointer;
+  color: #fff;
+}
+.culinary-collection-imgs .imgs img {
+  width: 100px;
+}
+.culinary-collection-imgs .imgs img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.farm-to-table-section {
+  margin-top: 150px;
+}
+.farm-to-table-section .top-part {
+  display: flex;
+  justify-content: space-between;
+}
+.farm-to-table-section .top-part .description {
+  width: 600px;
+}
+.farm-to-table-section .top-part .description h4 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.farm-to-table-section .top-part .description p {
+  font-size: 16px;
+}
+.farm-to-table-section .top-part .top-button .read-our-blog-button {
+  background: #fc7525;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 43px;
+  width: 180px;
+  line-height: 43px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.farm-to-table-section .top-part .top-button .read-our-blog-button:hover {
+  cursor: pointer;
+  background: #EE5827;
+}
+
+.farm-to-table-imgs {
+  display: flex;
+  margin-top: 70px;
+}
+.farm-to-table-imgs .farm-content-left {
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+}
+.farm-to-table-imgs .farm-content-left .main-img {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-bottom: 50px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info {
+  padding: 0 40px 0 40px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info h3 {
+  margin: 40px 0 8px 0;
+  font-size: 20px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info span {
+  font-size: 14px;
+  color: #67615A;
+  position: relative;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info span:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 0.5em;
+  width: 510px;
+  border-top: 1px dotted #ccc;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info span a {
+  color: #333338;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info span a:hover {
+  color: #fc7525;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info p {
+  margin: 40px 0 40px 0;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat .read-more {
+  font-size: 15px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat .read-more i {
+  font-size: 11px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat .read-more:hover {
+  color: #fc7525;
+  cursor: pointer;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat .comments {
+  font-size: 16px;
+}
+.farm-to-table-imgs .farm-content-left .main-img .main-img-info .read-more-chat .comments:hover {
+  color: #fc7525;
+  cursor: pointer;
+}
+.farm-to-table-imgs .farm-content-left .miniatures {
+  display: flex;
+  flex-wrap: wrap;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes {
+  width: 360px;
+  margin-bottom: 50px;
+  background: #fff;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes img {
+  width: 360px;
+}
+.farm-to-table-imgs .farm-content-left .load-more-posts {
+  height: 50px;
+  width: 100%;
+  background: #EDEDE7;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.farm-to-table-imgs .farm-content-left .load-more-posts:hover {
+  background: #EFEFE9;
+  cursor: pointer;
 }
