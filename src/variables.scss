@@ -6,5 +6,9 @@
     text-transform: uppercase;
     vertical-align: middle;
 }
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
 $orange-color: #fc7525;
 $orange-color-hover: #EE5827

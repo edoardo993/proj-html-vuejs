@@ -125,10 +125,10 @@ a {
   justify-content: center;
 }
 .jumbotron .central-content {
-  background: #fff;
-  border-radius: 7px;
   display: flex;
   flex-direction: column;
+  background: #fff;
+  border-radius: 7px;
   align-items: center;
   justify-content: center;
   width: 700px;
@@ -232,14 +232,14 @@ a {
   color: #fc7525;
 }
 .main-content .photo-container .photo-caption .foodie-journal-img-hover.hide {
+  display: flex;
+  flex-direction: column;
   width: 340px;
   height: 224px;
   background: rgba(252, 117, 37, 0.8);
   position: absolute;
   top: 0;
   left: 15px;
-  display: flex;
-  flex-direction: column;
   padding: 0 45px 0 45px;
 }
 .main-content .photo-container .photo-caption .foodie-journal-img-hover.hide div {
@@ -259,10 +259,10 @@ a {
   font-weight: bold;
 }
 .main-content .popular-recipes {
-  text-align: center;
-  width: 600px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 600px;
   margin: 120px auto 100px auto;
 }
 .main-content .popular-recipes h3 {
@@ -423,9 +423,9 @@ a {
   justify-content: space-between;
 }
 .farm-to-table-imgs .farm-content-left {
-  width: 770px;
   display: flex;
   flex-direction: column;
+  width: 770px;
 }
 .farm-to-table-imgs .farm-content-left .main-img {
   display: flex;
@@ -519,14 +519,29 @@ a {
 .farm-to-table-imgs .form-content-right .view-our-latest-recipes img {
   width: 380px;
 }
-.farm-to-table-imgs .form-content-right .view-our-latest-recipes h3 {
+.farm-to-table-imgs .form-content-right .view-our-latest-recipes .background-text {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  transform: translate(50%, 0);
+  transform: translate(77%, 252%);
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 19px;
+  text-align: center;
+}
+.farm-to-table-imgs .form-content-right .view-our-latest-recipes:hover {
+  cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right .city-guide img {
+  width: 380px;
+}
+.farm-to-table-imgs .form-content-right .city-guide .city-guide-button {
+  background: #fc7525;
 }
 
 .footer .subscribe-section {
+  display: flex;
+  flex-direction: column;
   background: url("../img/subscribe-sec-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -534,8 +549,6 @@ a {
   height: 550px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -620,9 +633,9 @@ a {
   color: #AAA6A2;
 }
 .footer .footer-nav .footer-nav-content .footer-contact {
-  padding: 0 40px 0 40px;
   display: flex;
   flex-direction: column;
+  padding: 0 40px 0 40px;
   justify-content: space-between;
   border-right: 1px dashed #d8d6d6;
   width: calc(100%/4);
@@ -643,9 +656,9 @@ a {
   color: #93908C;
 }
 .footer .footer-nav .footer-nav-content .footer-get-our-app {
-  padding: 0 40px 0 40px;
   display: flex;
   flex-direction: column;
+  padding: 0 40px 0 40px;
   justify-content: space-between;
   width: calc(100%/4);
 }
@@ -656,8 +669,11 @@ a {
   margin-bottom: 30px;
 }
 .footer .footer-nav .footer-nav-content .footer-get-our-app img {
-  width: 250px;
+  width: 220px;
   margin-bottom: 20px;
+}
+.footer .footer-nav .footer-nav-content .footer-get-our-app img:hover {
+  cursor: pointer;
 }
 .footer .footer-nav .footer-links {
   display: flex;
