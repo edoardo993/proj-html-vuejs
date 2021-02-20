@@ -7,7 +7,6 @@
 body {
   background: #f6f7f1;
   font-family: "Inter", sans-serif;
-  height: 32343px;
 }
 
 a {
@@ -15,7 +14,7 @@ a {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .fixed-buttons {
@@ -421,6 +420,7 @@ a {
 .farm-to-table-imgs {
   display: flex;
   margin-top: 70px;
+  justify-content: space-between;
 }
 .farm-to-table-imgs .farm-content-left {
   width: 770px;
@@ -509,4 +509,182 @@ a {
 .farm-to-table-imgs .farm-content-left .load-more-posts:hover {
   background: #EFEFE9;
   cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right {
+  width: 380px;
+}
+.farm-to-table-imgs .form-content-right .view-our-latest-recipes {
+  position: relative;
+}
+.farm-to-table-imgs .form-content-right .view-our-latest-recipes img {
+  width: 380px;
+}
+.farm-to-table-imgs .form-content-right .view-our-latest-recipes h3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, 0);
+}
+
+.footer .subscribe-section {
+  background: url("../img/subscribe-sec-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .subscribe-section .subscribe-title {
+  font-size: 30px;
+  color: #333338;
+}
+.footer .subscribe-section .subscribe-title .orange-commercial-e {
+  color: #fc7525;
+}
+.footer .subscribe-section .subscribe-caption {
+  margin: 30px 0 50px 0;
+}
+.footer .subscribe-section .subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer .subscribe-section .subscribe-form .insert-email-input {
+  width: 460px;
+  height: 55px;
+  font-size: 15px;
+  color: #D1D1D1;
+  border-radius: 7px;
+  border: 2px solid #fc7525;
+  padding: 0 20px 0 20px;
+}
+.footer .subscribe-section .subscribe-form .subscribe-button {
+  background: #fc7525;
+  height: 52px;
+  width: 220px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.footer .subscribe-section .subscribe-form .subscribe-button:hover {
+  background: #EE5827;
+  cursor: pointer;
+}
+.footer .insert-email-caption {
+  font-size: 14px;
+}
+.footer .footer-imgs {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .footer-imgs .footer-imgs-container img {
+  width: 356px;
+}
+.footer .footer-nav {
+  background: #fff;
+}
+.footer .footer-nav .footer-nav-content {
+  margin: 0 auto;
+  padding: 70px 0 70px 0;
+  width: 1200px;
+  display: flex;
+}
+.footer .footer-nav .footer-nav-content .avada-food-socials-footer {
+  width: calc(100%/4);
+  padding: 0 40px 0 40px;
+  border-right: 1px dashed #d8d6d6;
+}
+.footer .footer-nav .footer-nav-content .avada-food-socials-footer img {
+  width: 230px;
+}
+.footer .footer-nav .footer-nav-content .avada-food-socials-footer img:hover {
+  cursor: pointer;
+}
+.footer .footer-nav .footer-nav-content .footer-social-icons {
+  margin-top: 50px;
+}
+.footer .footer-nav .footer-nav-content .footer-social-icons a {
+  color: #94908B;
+  margin-right: 15px;
+}
+.footer .footer-nav .footer-nav-content .footer-social-icons a:hover {
+  color: #AAA6A2;
+}
+.footer .footer-nav .footer-nav-content .footer-contact {
+  padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px dashed #d8d6d6;
+  width: calc(100%/4);
+}
+.footer .footer-nav .footer-nav-content .footer-contact h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fc7525;
+}
+.footer .footer-nav .footer-nav-content .footer-contact span {
+  color: #93908C;
+}
+.footer .footer-nav .footer-nav-content .footer-contact .footer-contact-info {
+  display: flex;
+}
+.footer .footer-nav .footer-nav-content .footer-contact .footer-contact-info i {
+  padding: 0 20px 0 10px;
+  color: #93908C;
+}
+.footer .footer-nav .footer-nav-content .footer-get-our-app {
+  padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100%/4);
+}
+.footer .footer-nav .footer-nav-content .footer-get-our-app h5 {
+  color: #fc7525;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.footer .footer-nav .footer-nav-content .footer-get-our-app img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+.footer .footer-nav .footer-links {
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/4);
+  justify-content: space-between;
+  padding: 0 40px 0 40px;
+  border-right: 1px dashed #d8d6d6;
+}
+.footer .footer-nav .footer-links span {
+  font-weight: bold;
+  font-size: 17px;
+}
+.footer .footer-nav .footer-links span:hover {
+  color: #fc7525;
+  cursor: pointer;
+}
+.footer .footer-copyright {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 35px 0;
+  font-size: 13px;
+  color: #333338;
+}
+.footer .footer-copyright a {
+  color: #333338;
+}
+.footer .footer-copyright a:hover {
+  color: #fc7525;
 }
