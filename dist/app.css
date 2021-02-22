@@ -488,14 +488,36 @@ a {
 .farm-to-table-imgs .farm-content-left .miniatures {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes {
   width: 360px;
   margin-bottom: 50px;
   background: #fff;
+  text-align: center;
 }
 .farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes img {
   width: 360px;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info {
+  margin: 20px 20px 35px 20px;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info h3 {
+  margin-bottom: 15px;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info h3:hover {
+  cursor: pointer;
+  color: #fc7525;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info span {
+  font-size: 14px;
+  color: #67615A;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info span a {
+  color: #333338;
+}
+.farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .miniatures-info span a:hover {
+  color: #fc7525;
 }
 .farm-to-table-imgs .farm-content-left .load-more-posts {
   height: 50px;
@@ -532,11 +554,129 @@ a {
 .farm-to-table-imgs .form-content-right .view-our-latest-recipes:hover {
   cursor: pointer;
 }
+.farm-to-table-imgs .form-content-right .city-guide {
+  position: relative;
+}
 .farm-to-table-imgs .form-content-right .city-guide img {
   width: 380px;
 }
 .farm-to-table-imgs .form-content-right .city-guide .city-guide-button {
   background: #fc7525;
+}
+.farm-to-table-imgs .form-content-right .city-guide:after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  height: 0.5em;
+  width: 380px;
+  border-top: 1px solid #ccc;
+}
+.farm-to-table-imgs .form-content-right .search-input-farm-to-table {
+  width: 380px;
+  position: relative;
+  margin-top: 80px;
+}
+.farm-to-table-imgs .form-content-right .search-input-farm-to-table input {
+  width: 100%;
+  height: 55px;
+  padding: 0 50px 0 50px;
+  border-radius: 7px;
+  border: 2px solid #dfdede;
+  font-size: 15px;
+  color: #c9c5c5;
+}
+.farm-to-table-imgs .form-content-right .search-input-farm-to-table i {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #c9c5c5;
+}
+.farm-to-table-imgs .form-content-right .follow-us {
+  margin: 50px 0 50px 0;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-text {
+  color: #fc7525;
+  font-weight: bold;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-icons-container {
+  display: flex;
+  margin-top: 20px;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-icons-container .single-icon-container {
+  height: 37px;
+  width: 37px;
+  background: #EDECE8;
+  border-radius: 7px;
+  border: 1px solid #E5E4DF;
+  line-height: 37px;
+  text-align: center;
+  margin-right: 15px;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-icons-container .single-icon-container a {
+  color: #67615A;
+  font-size: 19px;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-icons-container .single-icon-container a:hover {
+  color: #837F78;
+}
+.farm-to-table-imgs .form-content-right .follow-us .follow-us-icons-container .single-icon-container:hover {
+  background: #EEEEEA;
+  cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-recent {
+  display: flex;
+  margin-bottom: 45px;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-recent > div {
+  width: 200px;
+  border: 1px solid #E9E8E7;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-recent > div:hover {
+  background: #fff;
+  cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-recent .popular {
+  background: #fff;
+  border-right: none;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links {
+  display: flex;
+  flex-direction: column;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links > div {
+  display: flex;
+  align-items: center;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links > div img {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links > div img:hover {
+  cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links > div div {
+  margin-left: 15px;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links .city-guide-singapore {
+  margin: 40px 0 40px 0;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links .popular-links-date {
+  font-size: 13px;
+  color: #6F6962;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links .popular-links-title {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.farm-to-table-imgs .form-content-right .popular-recent-section .popular-links .popular-links-title:hover {
+  color: #fc7525;
+  cursor: pointer;
 }
 
 .footer .subscribe-section {
@@ -548,7 +688,7 @@ a {
   background-size: cover;
   height: 550px;
   width: 100%;
-  margin: 0 auto;
+  margin: 130px auto 0 auto;
   justify-content: center;
   align-items: center;
 }
