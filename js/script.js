@@ -3,13 +3,12 @@ new Vue({
     data: {
         navbarListItems: [
 
-            {name: 'Home'},
-            {name: 'Recipes'},
-            {name: 'Places'},
-            {name: 'Blog'},
-            {name: 'About'},
-            {name: 'Contact'},
-            {name: '<i class="fas fa-search"></i>'}
+            {name: 'Home', url:'#'},
+            {name: 'Recipes', url: '#'},
+            {name: 'Places', url: '#'},
+            {name: 'Blog', url: '#'},
+            {name: 'About', url: '#'},
+            {name: 'Contact', url: '#'}
       
         ]
     },
