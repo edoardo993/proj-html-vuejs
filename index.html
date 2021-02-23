@@ -306,26 +306,34 @@
                     </div>
                     <!-- end farm to table miniatures -->
 
+                    <div class="loading-next-set-of-posts hide" id="loading-set-posts">
+                        Loading next set of posts...
+                    </div>
+
                     <!-- farm to table load more posts -->
-                    <div class="load-more-posts">
+                    <div class="load-more-posts" id="more-posts-button" @click="clickToLoadPosts('more-posts-hidden', 'more-posts-button')">
                         load more posts
                     </div>
                     <!-- end farm to table load more posts -->
 
-                    <div class="miniatures-boxes hide" v-for="(el, index) in miniaturesContainer">
+                    <div class="miniatures hide" id="more-posts-hidden">
 
-                        <img :src="el.url" @mouseenter="viewHoverCommonClass('hidden-miniatures-hidden-div', index)">
+                        <div class="miniatures-boxes hid" v-for="(el, index) in hiddenMiniaturesContainer">
 
-                        <div class="miniatures-info">
-                            <h3>{{el.description}}</h3>
-                            <span>By <a href="#">admin</a> | March 25th, 2019</span>
-                        </div>
+                            <img :src="el.url" @mouseenter="viewHoverCommonClass('hidden-miniatures-hidden-div', index)">
 
-                        <div class="hover hide hidden-miniatures-hidden-div"
-                            @mouseleave="hideHoverCommonClass('hidden-miniatures-hidden-div', index)"
-                        >
-                            <div><i class="fas fa-link"></i></div>
-                            <span class="hover-span">{{el.description}}</span>
+                            <div class="miniatures-info">
+                                <h3>{{el.description}}</h3>
+                                <span>By <a href="#">admin</a> | March 25th, 2019</span>
+                            </div>
+
+                            <div class="hover hide hidden-miniatures-hidden-div"
+                                @mouseleave="hideHoverCommonClass('hidden-miniatures-hidden-div', index)"
+                            >
+                                <div><i class="fas fa-link"></i></div>
+                                <span class="hover-span">{{el.description}}</span>
+                            </div>
+
                         </div>
 
                     </div>

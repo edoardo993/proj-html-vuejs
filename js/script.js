@@ -135,6 +135,32 @@ new Vue({
                 description: '5 Waterside Restaurants in Istanbul for Special Events'
             },
         ],
+        hiddenMiniaturesContainer: [
+            {
+                url: 'img/fruits-coffee.png',
+                description: 'Tasting Banana Chocolate Loaf Cake in Singapore'
+            },
+            {
+                url: 'img/tea-cups.png',
+                description: 'Popular Malaysian Rice Dishes Reviewed'
+            },
+            {
+                url: 'img/nuts.png',
+                description: 'Why These Toasts with Tea are My New Favorite'
+            },
+            {
+                url: 'img/people-bar.png',
+                description: 'Hanging Out in Buenos Aires - Finding the Bet Outdoor Cafes Around the City'
+            },
+            {
+                url: 'img/egg-avocado.png',
+                description: '6 Nutritional Tips to Help Burn Body Fat'
+            },
+            {
+                url: 'img/singapore-view.png',
+                description: 'City Guide: Singapore'
+            },
+        ],
 
         // array oggetti url-foto/descrizione sezione immagini footer
         footerImgs: [
@@ -225,6 +251,13 @@ new Vue({
         hideHoverId(idName){
             let hoverDiv=document.getElementById(idName);
             hoverDiv.classList.add('hide')
+        },
+        clickToLoadPosts(idName, idNameScnd){
+            let hoverDiv=document.getElementById(idName);
+            hoverDiv.classList.remove('hide');
+
+            let hoverDivScnd=document.getElementById(idNameScnd);
+            hoverDivScnd.classList.add('hide')
         }
     }
 });
