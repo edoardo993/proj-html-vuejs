@@ -212,8 +212,7 @@ new Vue({
         ]
     },
 
-    // mounted per avere la lista dei link del footer, eliminando la
-    // voce Home dall'elenco
+    // richiamo nel mounted la funzione footerNavListCreator
     mounted(){
         this.footerNavListCreator()
     },
