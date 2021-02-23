@@ -10,7 +10,31 @@
     display: flex;
     flex-direction: column;
 }
-@mixin footer-background-position-imgs {
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin background-cover-no-repeat {
     background-size: cover;
     background-repeat: no-repeat;
+}
+@mixin after-before-dotted-line{
+    content:"";
+    position: absolute;
+    height: 0.5em;
+    border-top: 1px dotted #ccc;
 }

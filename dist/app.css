@@ -173,21 +173,21 @@ a {
 }
 
 .jumbotron {
-  height: 700px;
-  background: url("../img/single-post-img3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
+  background: url("../img/single-post-img3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
 }
 .jumbotron .central-content {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border-radius: 7px;
   align-items: center;
   justify-content: center;
+  background: #fff;
+  border-radius: 7px;
   width: 700px;
   height: 230px;
   margin-top: 190px;
@@ -245,20 +245,20 @@ a {
 .main-content .foodie-journal h2:after {
   content: "";
   position: absolute;
-  bottom: 27px;
-  right: 0;
   height: 0.5em;
-  width: 420px;
   border-top: 1px dotted #ccc;
+  bottom: 27px;
+  right: 15px;
+  width: 420px;
 }
 .main-content .foodie-journal h2:before {
   content: "";
   position: absolute;
-  bottom: 27px;
-  left: 0;
   height: 0.5em;
-  width: 420px;
   border-top: 1px dotted #ccc;
+  bottom: 27px;
+  left: 15px;
+  width: 420px;
 }
 .main-content .photo-container {
   display: flex;
@@ -348,11 +348,11 @@ a {
 .main-content .popular-recipes-imgs .content-left .popular-info .popular-info-span:after {
   content: "";
   position: absolute;
+  height: 0.5em;
+  border-top: 1px dotted #ccc;
   bottom: -30px;
   left: 0;
-  height: 0.5em;
   width: 510px;
-  border-top: 1px dotted #ccc;
 }
 .main-content .popular-recipes-imgs .content-left .popular-info .popular-info-span a {
   color: #333338;
@@ -479,8 +479,8 @@ a {
 
 .farm-to-table-imgs {
   display: flex;
-  margin-top: 70px;
   justify-content: space-between;
+  margin-top: 70px;
 }
 .farm-to-table-imgs .farm-content-left {
   display: flex;
@@ -510,11 +510,11 @@ a {
 .farm-to-table-imgs .farm-content-left .main-img .main-img-info span:after {
   content: "";
   position: absolute;
+  height: 0.5em;
+  border-top: 1px dotted #ccc;
   bottom: -30px;
   left: 0;
-  height: 0.5em;
   width: 510px;
-  border-top: 1px dotted #ccc;
 }
 .farm-to-table-imgs .farm-content-left .main-img .main-img-info span a {
   color: #333338;
@@ -614,8 +614,8 @@ a {
 }
 .farm-to-table-imgs .form-content-right .view-our-latest-recipes {
   background: url("../img/ad-bg.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
   width: 100%;
@@ -636,8 +636,8 @@ a {
 }
 .farm-to-table-imgs .form-content-right .city-guide {
   background: url("../img/singapore-featured-image.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   width: 380px;
   height: 250px;
@@ -678,11 +678,11 @@ a {
 .farm-to-table-imgs .form-content-right .city-guide:after {
   content: "";
   position: absolute;
+  height: 0.5em;
+  border-top: 1px dotted #ccc;
   bottom: -100px;
   left: 0;
-  height: 0.5em;
   width: 380px;
-  border-top: 1px solid #ccc;
 }
 .farm-to-table-imgs .form-content-right .city-guide:hover {
   cursor: pointer;
@@ -833,6 +833,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+.farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-info-container .tweets-section-username .username-mention span:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+.farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-info-container .tweets-section-username .username-mention span:nth-child(2) {
+  font-size: 12px;
+}
 .farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-info-container .hubspot-icon {
   width: 100%;
   height: 170px;
@@ -853,9 +860,22 @@ a {
 .farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-section-lower-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
+}
+.farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-section-lower-content .lower-content-icons i {
+  margin-right: 25px;
+}
+.farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-section-lower-content .lower-content-icons i:hover {
+  color: #20ad96;
+  cursor: pointer;
+}
+.farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container .tweets-section-lower-content span {
+  font-size: 12px;
+  color: #697B89;
 }
 .farm-to-table-imgs .form-content-right .tweets-section .tweets-section-info-container:hover {
   background: #F5F8FA;
+  cursor: pointer;
 }
 .farm-to-table-imgs .form-content-right .tweets-section i {
   color: #ccc;
@@ -864,15 +884,15 @@ a {
 .footer .subscribe-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: url("../img/subscribe-sec-bg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   height: 550px;
   width: 100%;
   margin: 130px auto 0 auto;
-  justify-content: center;
-  align-items: center;
 }
 .footer .subscribe-section .subscribe-title {
   font-size: 30px;

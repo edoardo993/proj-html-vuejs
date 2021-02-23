@@ -459,12 +459,12 @@
 
                                 <div class="tweets-section-lower-content">
 
-                                    <div>
+                                    <div class="lower-content-icons">
                                         <i class="far fa-heart"></i>
                                         <i class="fas fa-sign-out-alt"></i>
                                     </div>
 
-                                    <span>Feb 19, 2021</span>
+                                    <span>7h</span>
                                 </div>
 
                             </div>
@@ -489,7 +489,10 @@
             <!-- subscribe section -->
             <div class="subscribe-section">
 
-                <h4 class="subscribe-title">Subscribe <span class="orange-commercial-e">&</span> Receive A Free eBook</h4>
+                <h4 class="subscribe-title">
+                    Subscribe <span class="orange-commercial-e">&</span> Receive A Free eBook
+                </h4>
+
                 <p class="subscribe-caption">
                     Aliquam erat volutpat. Ut quis ligula a magna blandit finibus.
                     Suspendisse maximus lacus non nunc lacinia lobortis.
@@ -550,11 +553,7 @@
 
                     <div class="footer-links">
 
-                        <span v-for="el in bottom">{{el.name}}</span>
-                        <!-- <span>Places</span>
-                        <span>Blog</span>
-                        <span>About</span>
-                        <span>Contact</span> -->
+                        <span v-for="el in footerNavList">{{el}}</span>
 
                     </div>
 
@@ -568,7 +567,7 @@
                             <div>
                                 <span>775 New York Ave, Brroklyn, Kings, New York 11203</span>
                             </div>
-                            
+
                         </div>
 
                         <div class="footer-contact-info">

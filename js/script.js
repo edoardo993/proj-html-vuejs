@@ -166,7 +166,17 @@ new Vue({
                 url: 'img/quick-easy-recipes.png',
                 description: 'quick & easy'
             }
-        ]
+        ],
+        footerNavList: []
+    },
+    mounted(){
+        let navList=[];
+        this.navbarListItems.forEach((el)=>{
+            if(el.name!=='Home'){
+                navList.push(el.name)
+            }
+        });
+        return this.footerNavList=navList
     },
     methods: {
         viewHoverCommonClass(commonClass, index){

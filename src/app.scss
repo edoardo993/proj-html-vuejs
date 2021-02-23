@@ -104,7 +104,7 @@ a{
             & .iOS-button{
                 height:14px;
                 width: 25px;
-                background: $orange-color;
+                background: $green-color;
                 border-radius: 3px;
                 margin: 0 18px 0 8px;
                 display: flex;
@@ -175,8 +175,8 @@ a{
                     }
                     &:hover{
                         cursor: pointer;
-                        border-bottom: 3px solid $orange-color;
-                        color: $orange-color
+                        border-bottom: 3px solid $green-color;
+                        color: $green-color
                     }
                     &:last-child:hover{
                         border-bottom: none;
@@ -187,20 +187,16 @@ a{
     }
 }
 .jumbotron{
-    height: 700px;
+    @include flex-center;
     background: url('../img/single-post-img3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background-cover-no-repeat;
     background-position: center;
-    display: flex;
-    justify-content: center;
+    height: 700px;
 
     & .central-content{
-        @include flex-column;
+        @include flex-column-center;
         background: #fff;
         border-radius: 7px;
-        align-items: center;
-        justify-content: center;
         width: 700px;
         height: 230px;
         margin-top: 190px;
@@ -224,7 +220,7 @@ a{
         top: -25px;
         height: 42px;
         width: 160px;
-        background: $orange-color;
+        background: $green-color;
         border-radius: 7px;
         box-shadow: 1px 1px 3px #afafaf;
         
@@ -259,28 +255,21 @@ a{
             color: $dark-color;
 
             &:after{
-                content:"";
-                position: absolute;
+                @include after-before-dotted-line;
                 bottom: 27px;
-                right: 0;
-                height: 0.5em;
+                right: 15px;
                 width: 420px;
-                border-top: 1px dotted #ccc;
             }
             &:before{
-                content:"";
-                position: absolute;
+                @include after-before-dotted-line;
                 bottom: 27px;
-                left: 0;
-                height: 0.5em;
+                left: 15px;
                 width: 420px;
-                border-top: 1px dotted #ccc;
             }
         }
     }
     & .photo-container{
-        display: flex;
-        justify-content: space-between;
+        @include flex-space-between;
 
         & .photo-caption{
             text-align: center;
@@ -301,7 +290,7 @@ a{
 
                 &:hover{
                     cursor: pointer;
-                    color: $orange-color
+                    color: $green-color
                 }
             }
             & .photo-caption-span{
@@ -312,7 +301,7 @@ a{
                     color: #3D3D41;
 
                     &:hover{
-                        color: $orange-color
+                        color: $green-color
                     }
                 }
             }
@@ -362,7 +351,7 @@ a{
 
                 &:hover{
                     cursor: pointer;
-                    color: $orange-color
+                    color: $green-color
                 }
             }
             & .popular-info{
@@ -372,20 +361,17 @@ a{
                     position: relative;
 
                     &:after{
-                        content:"";
-                        position: absolute;
+                        @include after-before-dotted-line;
                         bottom: -30px;
                         left: 0;
-                        height: 0.5em;
                         width: 510px;
-                        border-top: 1px dotted #ccc;
                     }
                     & a{
                         color: #333338;
                         font-size: 14px;
     
                         &:hover{
-                            color: $orange-color
+                            color: $green-color
                         }
                     }
                 }
@@ -395,7 +381,7 @@ a{
                     line-height: 2em;
                 }
                 & .learn-more-button{
-                    background: $orange-color;
+                    background: $green-color;
                     color: white;
                     border-radius: 2px;
                     text-align: center;
@@ -408,7 +394,7 @@ a{
                     margin-top: 25px;
 
                     &:hover{
-                        background: $orange-color-hover;
+                        background: $green-color-hover;
                         cursor: pointer
                     }
                 }
@@ -420,8 +406,7 @@ a{
             }
         }
         & .content-right{
-            display: flex;
-            flex-wrap: wrap;
+            @include flex-wrap;
             justify-content: flex-end;
 
             & .imgs{
@@ -439,8 +424,7 @@ a{
     }
 }
 .culinary-collection-imgs{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-wrap;
 
     & .imgs{
         width: 265px;
@@ -461,7 +445,7 @@ a{
             color: $dark-color;
 
             &:hover{
-                background: $orange-color;
+                background: $green-color;
                 cursor: pointer;
                 color: #fff
             }
@@ -481,8 +465,7 @@ a{
     margin-top: 150px;
 
     & .top-part{
-        display: flex;
-        justify-content: space-between;
+        @include flex-space-between;
 
         & .description{
             width: 600px;
@@ -500,7 +483,7 @@ a{
             }
         }
         & .top-button .read-our-blog-button{
-            background: $orange-color;
+            background: $green-color;
             color: white;
             border-radius: 2px;
             text-align: center;
@@ -513,15 +496,14 @@ a{
 
             &:hover{
                 cursor: pointer;
-                background: $orange-color-hover
+                background: $green-color-hover
             }
         }
     }
 }
 .farm-to-table-imgs{
-    display: flex;
+    @include flex-space-between;
     margin-top: 70px;
-    justify-content: space-between;
 
     & .farm-content-left{
         @include flex-column;
@@ -547,19 +529,16 @@ a{
                     position: relative;
 
                     &:after{
-                        content:"";
-                        position: absolute;
+                        @include after-before-dotted-line;
                         bottom: -30px;
                         left: 0;
-                        height: 0.5em;
                         width: 510px;
-                        border-top: 1px dotted #ccc;
                     }
                     & a{
                         color: #333338;
 
                         &:hover{
-                            color: $orange-color
+                            color: $green-color
                         }
                     }
                 }
@@ -569,8 +548,7 @@ a{
                     line-height: 2em;
                 }
                 & .read-more-chat{
-                    display: flex;
-                    justify-content: space-between;
+                    @include flex-space-between;
                     margin-bottom: 40px;
 
                     & .read-more{
@@ -582,7 +560,7 @@ a{
                             color: #39393E;
                         }
                         &:hover{
-                            color: $orange-color;
+                            color: $green-color;
                             cursor: pointer;
                         }
                     }
@@ -591,7 +569,7 @@ a{
                         color: #39393E;
 
                         &:hover{
-                            color: $orange-color;
+                            color: $green-color;
                             cursor: pointer;
                         }
                     }
@@ -604,8 +582,7 @@ a{
             }
         }
         & .miniatures{
-            display: flex;
-            flex-wrap: wrap;
+            @include flex-wrap;
             justify-content: space-between;
 
             & .miniatures-boxes{
@@ -627,7 +604,7 @@ a{
 
                         &:hover{
                             cursor: pointer;
-                            color: $orange-color;
+                            color: $green-color;
                         }
                     }
                     & span{
@@ -638,7 +615,7 @@ a{
                             color: #333338;
 
                             &:hover{
-                                color: $orange-color
+                                color: $green-color
                             }
                         }
                     }
@@ -668,8 +645,7 @@ a{
 
         & .view-our-latest-recipes{
             background: url('../img/ad-bg.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include background-cover-no-repeat;
             background-position: center;
             position: relative;
             width: 100%;
@@ -691,14 +667,13 @@ a{
         }
         & .city-guide{
             background: url('../img/singapore-featured-image.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include background-cover-no-repeat;
             position: relative;
             width: 380px;
             height: 250px;
 
             & .city-guide-button{
-                background: $orange-color;
+                background: $green-color;
                 height: 46px;
                 text-align: center;
                 line-height: 46px;
@@ -714,7 +689,7 @@ a{
                     margin-right: 11px
                 }
                 &:hover{
-                    background: $orange-color-hover;
+                    background: $green-color-hover;
                     cursor: pointer;
                 }
             }
@@ -732,13 +707,10 @@ a{
                 letter-spacing: 1px;
             }
             &:after{
-                content:"";
-                position: absolute;
+                @include after-before-dotted-line;
                 bottom: -100px;
                 left: 0;
-                height: 0.5em;
                 width: 380px;
-                border-top: 1px solid #ccc;
             }
             &:hover{
                 cursor: pointer;
@@ -770,7 +742,7 @@ a{
             margin: 50px 0 50px 0;
 
             & .follow-us-text{
-                color: $orange-color;
+                color: $green-color;
                 font-weight: bold;
             }
             & .follow-us-icons-container{
@@ -858,7 +830,7 @@ a{
                     margin-bottom: 8px;
 
                     &:hover{
-                        color: $orange-color;
+                        color: $green-color;
                         cursor: pointer;
                     }
                 }
@@ -871,8 +843,7 @@ a{
             margin-top: 80px;
 
             & .tweets-section-title{
-                display: flex;
-                justify-content: space-between;
+                @include flex-space-between;
                 margin-bottom: 20px;
                 padding: 0 10px 0 10px;
 
@@ -900,11 +871,18 @@ a{
                     padding-left: 10px;
 
                     & .tweets-section-username{
-                        display: flex;
-                        justify-content: space-between;
+                        @include flex-space-between;
     
                         & .username-mention{
                             @include flex-column;
+
+                            & span:first-child{
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                            & span:nth-child(2){
+                                font-size: 12px;
+                            }
                         }
                     }
                     & .hubspot-icon{
@@ -927,11 +905,28 @@ a{
                     height: 35px
                 }
                 & .tweets-section-lower-content{
-                    display: flex;
-                    justify-content: space-between
+                    @include flex-space-between;
+                    margin-top: 8px;
+
+                    & .lower-content-icons{
+
+                        & i{
+                            margin-right: 25px;
+
+                            &:hover{
+                                color: $green-color;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    & span{
+                        font-size: 12px;
+                        color: #697B89
+                    }
                 }
                 &:hover{
-                    background: #F5F8FA
+                    background: #F5F8FA;
+                    cursor: pointer;
                 }
             }
             & i{
@@ -944,23 +939,20 @@ a{
 
 
     & .subscribe-section{
-        @include flex-column;
+        @include flex-column-center;
         background: url('../img/subscribe-sec-bg.png');
-        background-repeat: no-repeat;
+        @include background-cover-no-repeat;
         background-position: center;
-        background-size: cover;
         height: 550px;
         width: 100%;
         margin: 130px auto 0 auto;
-        justify-content: center;
-        align-items: center;
 
         & .subscribe-title{
             font-size: 30px;
             color: #333338;
 
             & .orange-commercial-e{
-                color: $orange-color
+                color: $green-color
             }
         }
         & .subscribe-caption{
@@ -977,7 +969,7 @@ a{
                 font-size: 15px;
                 color: #333338;
                 border-radius: 7px;
-                border: 2px solid $orange-color;
+                border: 2px solid $green-color;
                 padding: 0 20px 0 20px;
 
                 &::placeholder{
@@ -985,7 +977,7 @@ a{
                 }
             }
             & .subscribe-button{
-                background: $orange-color;
+                background: $green-color;
                 height: 52px;
                 width: 220px;
                 border-radius: 2px;
@@ -997,7 +989,7 @@ a{
                 margin-left: 20px;
 
                 &:hover{
-                    background: $orange-color-hover;
+                    background: $green-color-hover;
                     cursor: pointer;
                 }
             }
@@ -1013,7 +1005,7 @@ a{
         height: 230px;
 
         & .footer-imgs-container{
-            @include footer-background-position-imgs;
+            @include background-cover-no-repeat;
             position: relative;
             width: calc(100%/4);
 
@@ -1078,7 +1070,7 @@ a{
                 & h5{
                     text-transform: uppercase;
                     font-size: 15px;
-                    color: $orange-color;
+                    color: $green-color;
                 }
                 & span{
                     color: #93908C;
@@ -1098,7 +1090,7 @@ a{
                 width: calc(100%/4);
 
                 & h5{
-                    color: $orange-color;
+                    color: $green-color;
                     text-transform: uppercase;
                     font-size: 15px;
                     margin-bottom: 30px;
@@ -1125,7 +1117,7 @@ a{
                 font-size: 17px;
 
                 &:hover{
-                    color: $orange-color;
+                    color: $green-color;
                     cursor: pointer;
                 }
             }
@@ -1142,7 +1134,7 @@ a{
             color: #333338;
 
             &:hover{
-                color: $orange-color
+                color: $green-color
             }
         }
     }
