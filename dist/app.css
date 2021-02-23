@@ -592,6 +592,15 @@ a {
 .farm-to-table-imgs .farm-content-left .miniatures .miniatures-boxes .hover {
   height: 237px;
 }
+.farm-to-table-imgs .farm-content-left .loading-next-set-of-posts {
+  display: flex;
+  align-items: center;
+  font-style: oblique;
+  color: #a3a2a2;
+}
+.farm-to-table-imgs .farm-content-left .loading-next-set-of-posts img {
+  height: 25px;
+}
 .farm-to-table-imgs .farm-content-left .load-more-posts {
   height: 50px;
   width: 100%;
@@ -600,6 +609,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 25px;
 }
 .farm-to-table-imgs .farm-content-left .load-more-posts:hover {
   background: #EFEFE9;

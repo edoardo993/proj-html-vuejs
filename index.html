@@ -307,11 +307,15 @@
                     <!-- end farm to table miniatures -->
 
                     <div class="loading-next-set-of-posts hide" id="loading-set-posts">
-                        Loading next set of posts...
+                        <img src="img/loading.gif" alt="">
+                        <span class="loading-text">Loading next set of posts...</span>
                     </div>
 
                     <!-- farm to table load more posts -->
-                    <div class="load-more-posts" id="more-posts-button" @click="clickToLoadPosts('more-posts-hidden', 'more-posts-button')">
+                    <div class="load-more-posts"
+                        id="more-posts-button"
+                        @click="clickToLoadPosts('loading-set-posts')"
+                    >
                         load more posts
                     </div>
                     <!-- end farm to table load more posts -->

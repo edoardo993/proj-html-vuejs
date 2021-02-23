@@ -215,15 +215,21 @@ new Vue({
     // mounted per avere la lista dei link del footer, eliminando la
     // voce Home dall'elenco
     mounted(){
-        let navList=[];
-        this.navbarListItems.forEach((el)=>{
+        this.footerNavListCreator()
+    },
+    methods: {
+
+        // funzione per generare dalla lista link navbar un'altra lista
+        // escludendo il primo item 'Home'
+        footerNavListCreator(){
+            let navList=[];
+            this.navbarListItems.forEach((el)=>{
             if(el.name!=='Home'){
                 navList.push(el.name)
             }
-        });
-        return this.footerNavList=navList
-    },
-    methods: {
+            });
+            return this.footerNavList=navList
+        },
 
         // funzione per mostrare div con display:none quando si va in hover
         // su un'immagine (con classe comune, per div con più immagini)
@@ -252,12 +258,24 @@ new Vue({
             let hoverDiv=document.getElementById(idName);
             hoverDiv.classList.add('hide')
         },
-        clickToLoadPosts(idName, idNameScnd){
-            let hoverDiv=document.getElementById(idName);
-            hoverDiv.classList.remove('hide');
 
-            let hoverDivScnd=document.getElementById(idNameScnd);
-            hoverDivScnd.classList.add('hide')
+        // funzione per il pulsante 'load more posts' per il caricamento async
+        // dei restanti post (#carineriaEstetica)
+        clickToLoadPosts(idName){
+
+            let hoverDivScnd=document.getElementById(idName);
+            hoverDivScnd.classList.remove('hide');
+
+            setTimeout(function(){
+                let loadingSetPosts=document.getElementById('loading-set-posts');
+                loadingSetPosts.classList.add('hide');
+
+                let morePostsButton=document.getElementById('more-posts-button');
+                morePostsButton.classList.add('hide');
+
+                let morePostsDiv=document.getElementById('more-posts-hidden');
+                morePostsDiv.classList.remove('hide');
+            }, 1400)
         }
     }
 });

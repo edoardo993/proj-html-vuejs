@@ -622,6 +622,16 @@ a{
                 }
             }
         }
+        & .loading-next-set-of-posts{
+            display: flex;
+            align-items: center;
+            font-style: oblique;
+            color: rgb(163, 162, 162);
+
+            & img{
+                height: 25px
+            }
+        }
         & .load-more-posts{
             height: 50px;
             width: 100%;
@@ -630,6 +640,7 @@ a{
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
+            margin-top: 25px;
 
             &:hover{
                 background: #EFEFE9;
