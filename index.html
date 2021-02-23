@@ -97,7 +97,7 @@
 
                     <div class="photo-caption" v-for="(el, index) in foodieJournalPhotoContainer">
 
-                        <div class="foodie-journal-img hover hid photo-caption-hidden-div"
+                        <div class="foodie-journal-img hover hide photo-caption-hidden-div"
                                 @mouseleave="hideHoverCommonClass('photo-caption-hidden-div', index)"
                         >
                             <div><i class="fas fa-link"></i></div>
@@ -154,7 +154,7 @@
                             </p>
                             <div class="learn-more-button">learn more</div>
 
-                            <div class="hover hid" id="popular-recipes-hidden-div" @mouseleave="hideHoverId('popular-recipes-hidden-div')">
+                            <div class="hover hide" id="popular-recipes-hidden-div" @mouseleave="hideHoverId('popular-recipes-hidden-div')">
                                 <div><i class="fas fa-link"></i></div>
                                 <span class="hover-span">Lunch Favourite with Salad, Naan And Beans</span>
                             </div>
@@ -170,7 +170,7 @@
                         >
                             <img :src="el.url">
 
-                            <div class="hover content-right-hidden-div hid"
+                            <div class="hover content-right-hidden-div hide"
                                 @mouseleave="hideHoverCommonClass('content-right-hidden-div', index)"
                             >
                                 <div><i class="fas fa-link"></i></div>
@@ -247,7 +247,7 @@
 
                         <img src="img/single-post-img3.jpg" @mouseenter="viewHoverId('farm-to-table-hidden-div')">
 
-                        <div class="hover hid" id="farm-to-table-hidden-div" @mouseleave="hideHoverId('farm-to-table-hidden-div')">
+                        <div class="hover hide" id="farm-to-table-hidden-div" @mouseleave="hideHoverId('farm-to-table-hidden-div')">
                             <div><i class="fas fa-link"></i></div>
                             <span class="hover-span">Food Corner: Top Japanese Restaurants for Sushi</span>
                         </div>
@@ -294,7 +294,7 @@
                                 <span>By <a href="#">admin</a> | March 25th, 2019</span>
                             </div>
 
-                            <div class="hover hid miniatures-hidden-div"
+                            <div class="hover hide miniatures-hidden-div"
                                 @mouseleave="hideHoverCommonClass('miniatures-hidden-div', index)"
                             >
                                 <div><i class="fas fa-link"></i></div>
@@ -311,6 +311,24 @@
                         load more posts
                     </div>
                     <!-- end farm to table load more posts -->
+
+                    <div class="miniatures-boxes hide" v-for="(el, index) in miniaturesContainer">
+
+                        <img :src="el.url" @mouseenter="viewHoverCommonClass('hidden-miniatures-hidden-div', index)">
+
+                        <div class="miniatures-info">
+                            <h3>{{el.description}}</h3>
+                            <span>By <a href="#">admin</a> | March 25th, 2019</span>
+                        </div>
+
+                        <div class="hover hide hidden-miniatures-hidden-div"
+                            @mouseleave="hideHoverCommonClass('hidden-miniatures-hidden-div', index)"
+                        >
+                            <div><i class="fas fa-link"></i></div>
+                            <span class="hover-span">{{el.description}}</span>
+                        </div>
+
+                    </div>
 
                 </div>
                 <!-- end farm to table left content -->
@@ -520,7 +538,7 @@
                     @mouseenter="viewHoverCommonClass('footer-imgs-hidden-div', index)"
                 >
 
-                    <div class="hover hid footer-imgs-hidden-div"
+                    <div class="hover hide footer-imgs-hidden-div"
                         @mouseleave="hideHoverCommonClass('footer-imgs-hidden-div', index)"
                     >
                         <div><i class="fas fa-link"></i></div>

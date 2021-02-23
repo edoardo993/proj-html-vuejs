@@ -203,28 +203,28 @@ new Vue({
         // su un'immagine (con classe comune, per div con più immagini)
         viewHoverCommonClass(commonClass, index){
             let hoverDiv=document.getElementsByClassName(commonClass)[index];
-            hoverDiv.classList.remove('hid')
+            hoverDiv.classList.remove('hide')
         },
 
         // funzione per nascondere div con display:block quando lasciamo l'hover
         // da un'immagine (con classe comune, per div con più immagini)
         hideHoverCommonClass(commonClass, index){
             let hoverDiv=document.getElementsByClassName(commonClass)[index];
-            hoverDiv.classList.add('hid')
+            hoverDiv.classList.add('hide')
         },
 
         // funzione per mostrare div con display:none quando si va in hover
         // su un'immagine (con ID, per div con una sola immagine)
         viewHoverId(idName){
             let hoverDiv=document.getElementById(idName);
-            hoverDiv.classList.remove('hid')
+            hoverDiv.classList.remove('hide')
         },
 
         // funzione per nascondere div con display:block quando lasciamo l'hover
         // da un'immagine (con ID, per div con una sola immagine)
         hideHoverId(idName){
             let hoverDiv=document.getElementById(idName);
-            hoverDiv.classList.add('hid')
+            hoverDiv.classList.add('hide')
         }
     }
 });

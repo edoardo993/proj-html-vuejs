@@ -45,11 +45,7 @@ a {
   text-decoration: none;
 }
 
-.hid {
-  display: none !important;
-}
-
-.active {
+.hide {
   display: none !important;
 }
 
