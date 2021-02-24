@@ -16,7 +16,8 @@ new Vue({
             {name: 'Places', url: '#'},
             {name: 'Blog', url: '#'},
             {name: 'About', url: '#'},
-            {name: 'Contact', url: '#'}
+            {name: 'Contact', url: '#'},
+            {name: '<i class="fas fa-search"></i>', url: '#'}
       
         ],
 
@@ -33,6 +34,23 @@ new Vue({
             {
                 url: 'img/fi-toasts.jpg',
                 title: 'Why These Toasts with Tea are My New Favorite'
+            }
+        ],
+        popularLinks: [
+            {
+                url: 'img/single-post-img3-66x66.jpg',
+                title: 'Food Corner: Top Japanese Restaurants for Sushi',
+                date: 'March 25th, 2019'
+            },
+            {
+                url: 'img/singapore-featured-image-66x66.jpg',
+                title: 'City Guide: Singapore',
+                date: 'March 25th, 2019'
+            },
+            {
+                url: 'img/slide1-bg-66x66.jpg',
+                title: '6 Nutritional Tips to Help Burn Body Fat',
+                date: 'March 25th, 2019'
             }
         ],
 
@@ -111,27 +129,27 @@ new Vue({
         // array oggetti url-foto/descrizione sezione miniatures container
         miniaturesContainer: [
             {
-                url: 'img/fi-roundup-400x263.jpg',
+                url: 'img/fi-roundup-600x395.jpg',
                 description: 'Roundup: My New Favourite Recipes For Healthy Living'
             },
             {
-                url: 'img/fi-korean-food-400x263.jpg',
+                url: 'img/fi-korean-food-1200x790.jpg',
                 description: 'Meal Prep: Korean Bibimbap with Kimchi'
             },
             {
-                url: 'img/fi-toasts-400x263.jpg',
+                url: 'img/fi-toasts-1200x790.jpg',
                 description: 'Why These Toasts with Tea are My New Favorite'
             },
             {
-                url: 'img/fi-street-food-400x263.jpg',
+                url: 'img/fi-street-food-1200x790.jpg',
                 description: 'Exploring Street Food in Bangkok'
             },
             {
-                url: 'img/fi-organic-breakfast-400x263.jpg',
+                url: 'img/fi-organic-breakfast-1200x790.jpg',
                 description: 'Organic Choices For Healthier Living'
             },
             {
-                url: 'img/fi-water-side-rest-400x263.jpg',
+                url: 'img/fi-water-side-rest-1200x790.jpg',
                 description: '5 Waterside Restaurants in Istanbul for Special Events'
             },
         ],
@@ -169,43 +187,57 @@ new Vue({
                 description: 'Lunch Favourite with Salad, Naan And Beans'
             },
             {
-                url: 'img/fi-korean-food-400x263.jpg',
+                url: 'img/Mixed-fruits-400x263.jpg',
                 description: 'Fruit Platter with Banana, Mango, Berries and Orange'
             },
             {
-                url: 'img/fi-toasts-400x263.jpg',
+                url: 'img/r-rachel-park-366508-unsplash-min-400x263.jpg',
                 description: 'Breakfast Delight With Strawberry, Egg and Fruit'
             },
             {
-                url: 'img/fi-street-food-400x263.jpg',
+                url: 'img/r-michelle-tsang-500721-unsplash-min-400x263.jpg',
                 description: 'Ice Cream Heaven With Vanilla, Chocolate And Pistachio'
+            }
+        ],
+        footerContacts: [
+            {
+                icon: '<i class="fas fa-map-marker-alt"></i>',
+                info: '775 New York Ave, Brroklyn, Kings, New York 11203'
+            },
+            {
+                icon: '<i class="fas fa-phone"></i>',
+                info: '+ 0100-505-0000'
+            },
+            {
+                icon: '<i class="fas fa-envelope"></i>',
+                info: 'info@your-domain.com'
             }
         ],
 
         // array oggetti nome/link/classe icone social
         socialIcons: [
             {
-                name: 'facebook',
+                name: 'Facebook',
                 link: 'https://www.facebook.com',
-                class: 'fab fa-facebook-f'
+                class: 'fab fa-facebook-f',
             },
             {
-                name: 'instagram',
+                name: 'Instagram',
                 link: 'https://www.instagram.com',
                 class: 'fab fa-instagram'
             },
             {
-                name: 'twitter',
+                name: 'Twitter',
                 link: 'https://www.twitter.com',
                 class: 'fab fa-twitter'
             },
             {
-                name: 'youtube',
+                name: 'Youtube',
                 link: 'https://www.youtube.com',
                 class: 'fab fa-youtube'
             },
             {
-                name: 'pinterest',
+                name: 'Pinterest',
                 link: 'https://www.pinterest.com',
                 class: 'fab fa-pinterest'
             }
@@ -219,11 +251,11 @@ new Vue({
     methods: {
 
         // funzione per generare dalla lista link navbar un'altra lista
-        // escludendo il primo item 'Home'
+        // escludendo gli item 'Home' e icona search
         footerNavListCreator(){
             let navList=[];
             this.navbarListItems.forEach((el)=>{
-            if(el.name!=='Home'){
+            if(el.name!=='Home' && el.name!=='<i class="fas fa-search"></i>'){
                 navList.push(el.name)
             }
             });
