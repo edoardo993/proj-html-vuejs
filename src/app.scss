@@ -22,6 +22,8 @@ h1,h2,h3,h4{
     top: 0;
     padding: 0 45px 0 45px;
     text-align: center;
+    width: 100%;
+    height: 100%;
 
     & div{
         margin-bottom: 15px;
@@ -629,7 +631,8 @@ a{
                     position: relative;
 
                     & img{
-                        width: 360px
+                        width: 360px;
+                        height: 237px;
                     }
                     & .miniatures-info{
                         margin: 20px 20px 35px 20px;
