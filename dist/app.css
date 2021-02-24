@@ -299,6 +299,7 @@ a {
 .main-content .photo-container .photo-caption h3 {
   margin: 15px 0 15px 0;
   font-size: 20px;
+  padding: 0 15px 0 15px;
 }
 .main-content .photo-container .photo-caption h3:hover {
   cursor: pointer;
